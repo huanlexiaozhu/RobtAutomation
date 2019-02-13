@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190212 21:21:04.160" generator="Robot 3.1 (Python 2.7.6 on linux2)">
+<suite source="/home/tj/PycharmProjects/RobtAutomation/ExternalKeywords/TC_001_Start_Close_Browser.robot" id="s1" name="TC 001 Start Close Browser">
+<test id="s1-t1" name="RobotFirstTestCase">
+<kw name="Start Browser and Maximize" library="Resource1">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20190212 21:21:04.286" level="INFO">Opening browser 'Chrome' to base url 'http://www.thetestingworld.com/testings/'.</msg>
+<status status="PASS" endtime="20190212 21:21:08.664" starttime="20190212 21:21:04.286"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190212 21:21:08.770" starttime="20190212 21:21:08.664"></status>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<doc>Returns the title of current page.</doc>
+<assign>
+<var>${Title}</var>
+</assign>
+<msg timestamp="20190212 21:21:08.780" level="INFO">${Title} = Login &amp; Sign Up Forms</msg>
+<status status="PASS" endtime="20190212 21:21:08.780" starttime="20190212 21:21:08.770"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${Title}</arg>
+</arguments>
+<msg timestamp="20190212 21:21:08.781" level="INFO">Login &amp; Sign Up Forms</msg>
+<status status="PASS" endtime="20190212 21:21:08.781" starttime="20190212 21:21:08.781"></status>
+</kw>
+<status status="PASS" endtime="20190212 21:21:08.782" starttime="20190212 21:21:04.286"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:fld_username</arg>
+<arg>hello</arg>
+</arguments>
+<msg timestamp="20190212 21:21:08.782" level="INFO">Typing text 'hello' into text field 'name:fld_username'.</msg>
+<status status="PASS" endtime="20190212 21:21:08.998" starttime="20190212 21:21:08.782"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name:fld_email</arg>
+<arg>Abcd</arg>
+</arguments>
+<msg timestamp="20190212 21:21:08.999" level="INFO">Typing text 'Abcd' into text field 'name:fld_email'.</msg>
+<status status="PASS" endtime="20190212 21:21:09.159" starttime="20190212 21:21:08.999"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@type='submit']</arg>
+</arguments>
+<msg timestamp="20190212 21:21:09.160" level="INFO">Clicking button 'xpath=//input[@type='submit']'.</msg>
+<status status="PASS" endtime="20190212 21:21:09.290" starttime="20190212 21:21:09.160"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" endtime="20190212 21:21:09.293" starttime="20190212 21:21:09.290"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190212 21:21:09.354" starttime="20190212 21:21:09.293"></status>
+</kw>
+<status status="PASS" endtime="20190212 21:21:09.354" critical="yes" starttime="20190212 21:21:04.285"></status>
+</test>
+<doc>Suite description</doc>
+<status status="PASS" endtime="20190212 21:21:09.356" starttime="20190212 21:21:04.161"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="TC 001 Start Close Browser" pass="1">TC 001 Start Close Browser</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20190212 21:21:04.283" level="ERROR">Error in file '/home/tj/PycharmProjects/RobtAutomation/ExternalKeywords/TC_001_Start_Close_Browser.robot': Resource file '../Resource/Resource1.robot' does not exist.</msg>
+</errors>
+</robot>
